@@ -1,9 +1,9 @@
-import { createContext,useState,useContext, Children } from "react";
+import { createContext,useState,useContext,Children} from "react";
 import axios from "axios";
 
-export const globalContext = createContext()
+ const globalContext = createContext()
 
-const globalProvider = ( {Children} ) => {
+export const globalProvider = ( {Children} ) => {
     
     const [query,setQuery] = useState("")
 
@@ -16,7 +16,9 @@ const globalProvider = ( {Children} ) => {
 
     const value = {
         query,
-        HandleSubmit
+        setQuery,
+        HandleSubmit,
+        
     }
 
     return(

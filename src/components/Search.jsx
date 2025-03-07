@@ -1,4 +1,5 @@
 import { useState,useEffect } from "react"
+import { useGlobalContext } from "../context/globalContext"
 
 export function Search(){
 
@@ -10,6 +11,9 @@ export function Search(){
     //     console.log(query);
         
     // }
+
+    const {setQuery,HandleSubmit} = useGlobalContext()
+
 
     return(
         <>

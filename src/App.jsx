@@ -1,12 +1,15 @@
 import { Header } from "./components/header"
 import { Main } from "./components/Main"
+import { globalProvider } from "./context/globalContext"
 
 
 function App() {
   return (
     <>
-    <Header/>
-    <Main/>  
+    <globalProvider>
+      <Header/>
+      <Main/>  
+    </globalProvider>
     </>
   )
 }
