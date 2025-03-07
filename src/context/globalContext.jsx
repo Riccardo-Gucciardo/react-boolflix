@@ -5,7 +5,7 @@ import axios from "axios";
 
 export const globalProvider = ( {Children} ) => {
     
-    const [query,setQuery] = useState("")
+    const [query,setQuery] = useState('')
 
     // stampiamo in console il dato ricercato modificando query
     const HandleSubmit = (e) => {
